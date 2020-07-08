@@ -2,22 +2,17 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Login from './pages/login/login';
+
 function App() {
+
+  let username = "BaiLong";
+  let password = 123;
+  let style = { color: "#0011ff", backgroundColor: "#fff" };
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Login username={username} style={style} />
       </header>
     </div>
   );
